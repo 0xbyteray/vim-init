@@ -16,6 +16,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'vim-scripts/phd'
+Plugin 'kristijanhusak/vim-hybrid-material'
+let g:enable_bold_font = 0
+"let g:enable_italic_font = 1
+let g:hybrid_transparent_background = 1
 
 " 状态栏插件
 Plugin 'vim-airline/vim-airline'
@@ -24,6 +28,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'default'
+let g:airline_theme = "hybrid"
 
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
@@ -60,6 +65,8 @@ Plugin 'tpope/vim-surround'
 call vundle#end()
 
 " 主题选择需要放在插件安装之后
-colorscheme solarized
+"colorscheme hybrid_material
+colorscheme hybrid_reverse
+"colorscheme solarized
 "colorscheme molokai
 "colorscheme phd
