@@ -4,7 +4,7 @@
 "
 "======================================================================
 " generate tags
-noremap <F5> :!ctags -R -f .tags
+noremap <F5> :!ctags -R -f .tags<CR>
 
 " 快速退出
 noremap <Leader>q :q<CR>
