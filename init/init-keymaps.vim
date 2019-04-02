@@ -3,6 +3,8 @@
 " init-keymaps.vim
 "
 "======================================================================
+" generate tags
+noremap <F5> :!ctags -R -f .tags
 
 " 快速退出
 noremap <Leader>q :q<CR>
