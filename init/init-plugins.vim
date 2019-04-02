@@ -17,8 +17,8 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'vim-scripts/phd'
 Plugin 'kristijanhusak/vim-hybrid-material'
+Plugin 'morhetz/gruvbox'
 let g:enable_bold_font = 0
-"let g:enable_italic_font = 1
 let g:hybrid_transparent_background = 1
 
 " 状态栏插件
@@ -65,8 +65,9 @@ Plugin 'tpope/vim-surround'
 call vundle#end()
 
 " 主题选择需要放在插件安装之后
+colorscheme gruvbox
 "colorscheme hybrid_material
-colorscheme hybrid_reverse
+"colorscheme hybrid_reverse
 "colorscheme solarized
 "colorscheme molokai
 "colorscheme phd
