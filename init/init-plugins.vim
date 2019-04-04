@@ -12,7 +12,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-" 主题插件
+" 主题
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'vim-scripts/phd'
@@ -21,7 +21,7 @@ Plugin 'morhetz/gruvbox'
 let g:enable_bold_font = 0
 let g:hybrid_transparent_background = 1
 
-" 状态栏插件
+" 状态栏
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 let g:airline#extensions#tabline#enabled = 1
@@ -38,7 +38,7 @@ let g:indent_guides_enable_on_vim_startup=0
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
 
-" Plugin 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-gitgutter'
 
 Plugin 'majutsushi/tagbar'
 noremap <F2> :TagbarToggle<CR> 
@@ -60,6 +60,11 @@ let g:EasyMotion_startofline = 0
 Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'tpope/vim-surround'
+
+" git wrapper
+Plugin 'tpope/vim-fugitive'
+
+Plugin 'jiangmiao/auto-pairs'
 
 " 结束插件安装
 call vundle#end()
