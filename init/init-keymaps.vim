@@ -19,13 +19,6 @@ vnoremap <Leader>y "+y
 " 粘贴系统剪贴板
 noremap <Leader>p "+p
 
-" 快速添加空格
-noremap [<space> :<c-u>put! =repeat(nr2char(10), v:count1)<cr>'[
-noremap ]<space> :<c-u>put =repeat(nr2char(10), v:count1)<cr>
-
-" 窗口操作
-" noremap <tab> <c-w><c-w>
-
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 
@@ -49,12 +42,6 @@ cnoremap <c-f> <right>
 cnoremap <c-b> <left>
 cnoremap <c-d> <del>
 cnoremap <c-_> <c-k>
-
-" buffer区操作
-noremap <silent> ]b :bnext<cr>
-noremap <silent> [b :bprev<cr>
-noremap <silent> ]B :bfirst<cr>
-noremap <silent> [B :blast<cr>
 
 " tab操作
 noremap <silent> <leader>tc :tabnew<cr>

@@ -1,6 +1,6 @@
 "======================================================================
 "
-" init-plugins.vim - 
+" init-plugins.vim
 "
 "======================================================================
 
@@ -34,35 +34,53 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 
 Plugin 'nathanaelkane/vim-indent-guides'
 nmap <silent> <Leader>i <Plug>IndentGuidesToggle
-let g:indent_guides_enable_on_vim_startup=0
-let g:indent_guides_start_level=2
-let g:indent_guides_guide_size=1
+let g:indent_guides_enable_on_vim_startup = 0
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
 
 Plugin 'airblade/vim-gitgutter'
+set updatetime=250
 
 Plugin 'majutsushi/tagbar'
-noremap <F2> :TagbarToggle<CR> 
-let g:tagbar_left=1 
-let g:tagbar_width=32 
-let g:tagbar_compact=1
+noremap <F2> :TagbarToggle<CR>
+let g:tagbar_left = 1
+let g:tagbar_width = 32
+let g:tagbar_compact = 1
 
 Plugin 'scrooloose/nerdtree'
 noremap <F3> :NERDTreeToggle<CR>
-let g:NERDTreeWinSize=32
-let g:NERDTreeWinPos="right"
-let g:NERDTreeShowHidden=1
-let g:NERDTreeMinimalUI=1
-let g:NERDTreeAutoDeleteBuffer=1
+let g:NERDTreeWinSize = 32
+let g:NERDTreeWinPos = "right"
+let g:NERDTreeShowHidden = 1
+let g:NERDTreeMinimalUI = 1
+let g:NERDTreeAutoDeleteBuffer = 1
 
 Plugin 'Lokaltog/vim-easymotion'
-let g:EasyMotion_startofline = 0 
+let g:EasyMotion_startofline = 0
 
 Plugin 'scrooloose/nerdcommenter'
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDCommentEmptyLines = 1
 
 Plugin 'tpope/vim-surround'
 
-" git wrapper
+Plugin 'tpope/vim-abolish'
+
 Plugin 'tpope/vim-fugitive'
+
+Plugin 'tpope/vim-repeat'
+
+Plugin 'tpope/vim-unimpaired'
+
+Plugin 'kana/vim-textobj-user'
+
+Plugin 'kana/vim-textobj-lastpat'
+
+Plugin 'kana/vim-textobj-entire'
+
+Plugin 'kana/vim-textobj-function'
 
 Plugin 'jiangmiao/auto-pairs'
 
