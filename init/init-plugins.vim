@@ -64,6 +64,11 @@ let g:NERDCompactSexyComs = 1
 let g:NERDDefaultAlign = 'left'
 let g:NERDCommentEmptyLines = 1
 
+Plugin 'rizzatti/dash.vim'
+let g:dash_activate = 0
+nmap <silent> <leader>d <Plug>DashSearch
+nmap <silent> <leader>gd <Plug>DashSearch
+
 Plugin 'tpope/vim-surround'
 
 Plugin 'tpope/vim-abolish'
