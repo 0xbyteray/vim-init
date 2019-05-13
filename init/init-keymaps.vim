@@ -51,14 +51,14 @@ noremap <silent> <leader>tp :tabprev<cr>
 noremap <silent> <leader>to :tabonly<cr>
 
 " <leader>+数字键 切换tab
-noremap <silent><leader>1 1gt<cr>
-noremap <silent><leader>2 2gt<cr>
-noremap <silent><leader>3 3gt<cr>
-noremap <silent><leader>4 4gt<cr>
-noremap <silent><leader>5 5gt<cr>
-noremap <silent><leader>6 6gt<cr>
-noremap <silent><leader>7 7gt<cr>
-noremap <silent><leader>8 8gt<cr>
-noremap <silent><leader>9 9gt<cr>
-noremap <silent><leader>0 10gt<cr>
+noremap <silent><leader>1 1gt
+noremap <silent><leader>2 2gt
+noremap <silent><leader>3 3gt
+noremap <silent><leader>4 4gt
+noremap <silent><leader>5 5gt
+noremap <silent><leader>6 6gt
+noremap <silent><leader>7 7gt
+noremap <silent><leader>8 8gt
+noremap <silent><leader>9 9gt
+noremap <silent><leader>0 10gt
 

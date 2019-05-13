@@ -13,6 +13,13 @@ else
 	let s:loaded = 1
 endif
 
+if has("autocmd")
+    autocmd BufReadPost *
+    \ if line("'\"") > 0 && line ("'\"") <= line("$") |
+    \   exe "normal g'\"" |
+    \ endif
+endif
+
 " 取得本文件所在的目录
 let s:home = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 
