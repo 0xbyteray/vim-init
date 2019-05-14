@@ -73,14 +73,16 @@ let g:Lf_GtagsAutoGenerate = 1
 let g:Lf_Gtagslabel = 'native-pygments'
 
 noremap <C-F> :<C-U><C-R>=printf("Leaderf! rg -e %s", "")<CR>
-noremap <leader><C-F> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR><CR>
-noremap go :<C-U>Leaderf! rg --recall<CR>
+noremap go :<C-U>Leaderf! rg --stayOpen --recall<CR>
 
+noremap <leader>ff :<C-U>Leaderf! function --stayOpen<CR>
+noremap <leader>ft :<C-U>Leaderf! bufTag --stayOpen<CR>
+
+noremap <leader><C-N> :<C-U><C-R>=printf("Leaderf! gtags -d %s", "")<CR>
 noremap <leader>fr :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
 noremap <leader>fd :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
-noremap <leader>fo :<C-U><C-R>=printf("Leaderf! gtags --recall %s", "")<CR><CR>
-noremap <leader>fn :<C-U><C-R>=printf("Leaderf gtags --next %s", "")<CR><CR>
-noremap <leader>fp :<C-U><C-R>=printf("Leaderf gtags --previous %s", "")<CR><CR>
+noremap <leader>fo :<C-U><C-R>=printf("Leaderf! gtags --stayOpen --recall %s", "")<CR><CR>
+
 
 Plugin 'tpope/vim-surround'
 
