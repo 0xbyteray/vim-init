@@ -64,10 +64,6 @@ let g:NERDCompactSexyComs = 1
 let g:NERDDefaultAlign = 'left'
 let g:NERDCommentEmptyLines = 1
 
-Plugin 'rizzatti/dash.vim'
-let g:dash_activate = 0
-nmap <silent> <leader>ds <Plug>DashSearch
-
 Plugin 'Yggdroot/LeaderF'
 let g:Lf_GtagsAutoGenerate = 1
 let g:Lf_Gtagslabel = 'native-pygments'
