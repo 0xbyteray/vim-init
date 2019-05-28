@@ -83,7 +83,6 @@ noremap <leader>fr :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand
 noremap <leader>fd :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
 noremap <leader>fo :<C-U><C-R>=printf("Leaderf! gtags --stayOpen --recall %s", "")<CR><CR>
 
-
 Plugin 'tpope/vim-surround'
 
 Plugin 'tpope/vim-abolish'
@@ -103,6 +102,16 @@ Plugin 'kana/vim-textobj-entire'
 Plugin 'kana/vim-textobj-function'
 
 Plugin 'jiangmiao/auto-pairs'
+
+Plugin 'SirVer/ultisnips'
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsEditSplit = "vertical"
+
+Plugin 'honza/vim-snippets'
+
+Plugin 'Valloric/YouCompleteMe'
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 
 " 结束插件安装
 call vundle#end()
