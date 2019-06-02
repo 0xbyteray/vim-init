@@ -68,8 +68,8 @@ Plugin 'Yggdroot/LeaderF'
 let g:Lf_GtagsAutoGenerate = 1
 let g:Lf_Gtagslabel = 'native-pygments'
 
-noremap <C-F> :<C-U><C-R>=printf("Leaderf! rg -e %s", "")<CR>
-noremap go :<C-U>Leaderf! rg --stayOpen --recall<CR>
+noremap <leader><C-F> :<C-U><C-R>=printf("Leaderf! rg -e %s", "")<CR>
+noremap <leader>go :<C-U>Leaderf! rg --stayOpen --recall<CR>
 
 noremap <leader>ff :<C-U>Leaderf! function --stayOpen<CR>
 noremap <leader>ft :<C-U>Leaderf! bufTag --stayOpen<CR>
@@ -82,6 +82,8 @@ noremap <leader>fo :<C-U><C-R>=printf("Leaderf! gtags --stayOpen --recall %s", "
 Plugin 'tpope/vim-surround'
 
 Plugin 'tpope/vim-abolish'
+
+Plugin 'tpope/vim-commentary'
 
 Plugin 'tpope/vim-fugitive'
 
@@ -108,6 +110,13 @@ Plugin 'honza/vim-snippets'
 Plugin 'Valloric/YouCompleteMe'
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+
+Plugin 'iamcco/mathjax-support-for-mkdp'
+Plugin 'iamcco/markdown-preview.vim'
+nmap <silent> <F8> <Plug>MarkdownPreview        
+imap <silent> <F8> <Plug>MarkdownPreview       
+nmap <silent> <F9> <Plug>StopMarkdownPreview  
+imap <silent> <F9> <Plug>StopMarkdownPreview
 
 " 结束插件安装
 call vundle#end()

@@ -42,6 +42,9 @@ set ignorecase
 " 关闭兼容模式
 set nocompatible
 
+" macOs下设置回退删除
+set backspace=2
+
 " vim 自身命令行模式智能补全
 set wildmenu
 
