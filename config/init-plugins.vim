@@ -57,6 +57,7 @@ let g:NERDTreeAutoDeleteBuffer = 1
 
 Plugin 'Lokaltog/vim-easymotion'
 let g:EasyMotion_startofline = 0
+let g:EasyMotion_smartcase = 1
 
 Plugin 'scrooloose/nerdcommenter'
 let g:NERDSpaceDelims = 1
@@ -110,6 +111,11 @@ Plugin 'honza/vim-snippets'
 Plugin 'Valloric/YouCompleteMe'
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+" let g:ycm_show_diagnostics_ui = 0
+let g:ycm_enable_diagnostic_signs = 0
+let g:ycm_enable_diagnostic_highlighting = 0
+let g:ycm_echo_current_diagnostic = 0
+let g:ycm_add_preview_to_completeopt = 0
 
 Plugin 'iamcco/mathjax-support-for-mkdp'
 Plugin 'iamcco/markdown-preview.vim'

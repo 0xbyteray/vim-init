@@ -9,7 +9,8 @@ if (has("termguicolors"))
 endif
 
 " 主题背景 dark / light
-set background=dark
+" set background=dark
+set background=light
 
 " 开启256色支持
 set t_Co=256

@@ -32,15 +32,18 @@ exec 'set rtp+='.s:home
 " 将 ~/.vim 目录加入 runtimepath (有时候 vim 不会自动帮你加入）
 set rtp+=~/.vim
 
+" 将fzf目录加入 runtimepath
+set rtp+=/usr/local/opt/fzf
+
 " 加载基础配置
-LoadScript init/init-basic.vim
+LoadScript config/init-basic.vim
 
 " 设定 tabsize
-LoadScript init/init-tabsize.vim
+LoadScript config/init-tabsize.vim
 
 " 插件加载
-LoadScript init/init-plugins.vim
+LoadScript config/init-plugins.vim
 
 " 自定义按键
-LoadScript init/init-keymaps.vim
+LoadScript config/init-keymaps.vim
 
