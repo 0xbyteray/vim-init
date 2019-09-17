@@ -73,7 +73,6 @@ noremap <leader>mr :<C-u>Leaderf! mru<CR>
 
 noremap <leader><C-F> :<C-U><C-R>=printf("Leaderf! rg -e %s", "")<CR>
 noremap <leader>go :<C-U>Leaderf! rg --stayOpen --recall<CR>
-
 noremap <leader>ff :<C-U>Leaderf! function --stayOpen<CR>
 noremap <leader>ft :<C-U>Leaderf! bufTag --stayOpen<CR>
 
