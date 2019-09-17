@@ -69,6 +69,8 @@ Plugin 'Yggdroot/LeaderF'
 let g:Lf_GtagsAutoGenerate = 1
 let g:Lf_Gtagslabel = 'native-pygments'
 
+noremap <leader>mr :<C-u>Leaderf! mru<CR>
+
 noremap <leader><C-F> :<C-U><C-R>=printf("Leaderf! rg -e %s", "")<CR>
 noremap <leader>go :<C-U>Leaderf! rg --stayOpen --recall<CR>
 
@@ -109,13 +111,15 @@ let g:UltiSnipsEditSplit = "vertical"
 Plugin 'honza/vim-snippets'
 
 Plugin 'Valloric/YouCompleteMe'
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+nnoremap <leader>j :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_key_list_select_completion = ['<TAB>', '<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<S=TAB>', '<C-p>', '<Up>']
 " let g:ycm_show_diagnostics_ui = 0
-let g:ycm_enable_diagnostic_signs = 0
-let g:ycm_enable_diagnostic_highlighting = 0
-let g:ycm_echo_current_diagnostic = 0
-let g:ycm_add_preview_to_completeopt = 0
+" let g:ycm_enable_diagnostic_signs = 0
+" let g:ycm_enable_diagnostic_highlighting = 0
+" let g:ycm_echo_current_diagnostic = 0
+" let g:ycm_add_preview_to_completeopt = 0
+set completeopt-=preview
 
 Plugin 'iamcco/mathjax-support-for-mkdp'
 Plugin 'iamcco/markdown-preview.vim'
