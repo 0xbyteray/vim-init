@@ -9,8 +9,8 @@ if (has("termguicolors"))
 endif
 
 " 主题背景 dark / light
-" set background=dark
-set background=light
+set background=dark
+" set background=light
 
 " 开启256色支持
 set t_Co=256
@@ -42,6 +42,19 @@ set ignorecase
 
 " 关闭兼容模式
 set nocompatible
+
+" 显示相对行号，方便多行操作
+set relativenumber
+
+" 普通模式下绝对、相对行号切换映射
+nnoremap <C-N> :call NumberToggle()<CR>
+fun! NumberToggle()
+	if (&relativenumber == 1)
+	    set norelativenumber number
+	else
+	    set relativenumber
+	endif
+endfunc
 
 " macOs下设置回退删除
 set backspace=2

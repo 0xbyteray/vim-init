@@ -113,11 +113,9 @@ Plugin 'Valloric/YouCompleteMe'
 nnoremap <leader>j :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let g:ycm_key_list_select_completion = ['<TAB>', '<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<S=TAB>', '<C-p>', '<Up>']
-" let g:ycm_show_diagnostics_ui = 0
-" let g:ycm_enable_diagnostic_signs = 0
-" let g:ycm_enable_diagnostic_highlighting = 0
-" let g:ycm_echo_current_diagnostic = 0
-" let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_show_diagnostics_ui = 0
+let g:ycm_server_log_level = 'info'
 set completeopt-=preview
 
 Plugin 'iamcco/mathjax-support-for-mkdp'
@@ -127,13 +125,17 @@ imap <silent> <F8> <Plug>MarkdownPreview
 nmap <silent> <F9> <Plug>StopMarkdownPreview  
 imap <silent> <F9> <Plug>StopMarkdownPreview
 
+" input switch using im-select
+Plugin 'ybian/smartim'
+let g:smartim_default = 'com.apple.keylayout.ABC'
+
 " 结束插件安装
 call vundle#end()
 
 " 主题选择需要放在插件安装之后
 colorscheme gruvbox
 "colorscheme hybrid_material
-"colorscheme hybrid_reverse
+" colorscheme hybrid_reverse
 "colorscheme solarized
 "colorscheme molokai
 "colorscheme phd
