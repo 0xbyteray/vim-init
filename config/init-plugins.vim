@@ -13,6 +13,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " 主题
+Plugin 'joshdick/onedark.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'vim-scripts/phd'
@@ -69,12 +70,13 @@ Plugin 'Yggdroot/LeaderF'
 let g:Lf_GtagsAutoGenerate = 1
 let g:Lf_Gtagslabel = 'native-pygments'
 
-noremap <leader>mr :<C-u>Leaderf! mru<CR>
+noremap <leader>fm :<C-U>Leaderf! mru<CR>
+noremap <leader>ff :<C-U>Leaderf! function --stayOpen<CR>
+noremap <leader>ft :<C-U>Leaderf! bufTag --stayOpen<CR>
+noremap <leader>fb :<C-U>Leaderf! buffer --stayOpen<CR>
 
 noremap <leader><C-F> :<C-U><C-R>=printf("Leaderf! rg -e %s", "")<CR>
 noremap <leader>go :<C-U>Leaderf! rg --stayOpen --recall<CR>
-noremap <leader>ff :<C-U>Leaderf! function --stayOpen<CR>
-noremap <leader>ft :<C-U>Leaderf! bufTag --stayOpen<CR>
 
 noremap <leader><C-N> :<C-U><C-R>=printf("Leaderf! gtags -d %s", "")<CR>
 noremap <leader>fr :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
@@ -104,7 +106,9 @@ Plugin 'kana/vim-textobj-function'
 Plugin 'jiangmiao/auto-pairs'
 
 Plugin 'SirVer/ultisnips'
-let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsExpandTrigger = "<leader>n"
+let g:UltiSnipsJumpForwardTrigger="<leader>n"
+let g:UltiSnipsJumpBackwardTrigger="<leader>p"
 let g:UltiSnipsEditSplit = "vertical"
 
 Plugin 'honza/vim-snippets'
@@ -133,7 +137,8 @@ let g:smartim_default = 'com.apple.keylayout.ABC'
 call vundle#end()
 
 " 主题选择需要放在插件安装之后
-colorscheme gruvbox
+colorscheme onedark
+" colorscheme gruvbox
 "colorscheme hybrid_material
 " colorscheme hybrid_reverse
 "colorscheme solarized
