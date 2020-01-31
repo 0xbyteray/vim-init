@@ -106,7 +106,7 @@ Plugin 'kana/vim-textobj-function'
 Plugin 'jiangmiao/auto-pairs'
 
 Plugin 'SirVer/ultisnips'
-let g:UltiSnipsExpandTrigger = "<leader>n"
+let g:UltiSnipsExpandTrigger = "<leader><tab>"
 let g:UltiSnipsJumpForwardTrigger="<leader>n"
 let g:UltiSnipsJumpBackwardTrigger="<leader>p"
 let g:UltiSnipsEditSplit = "vertical"
