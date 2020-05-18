@@ -130,8 +130,8 @@ nmap <silent> <F9> <Plug>StopMarkdownPreview
 imap <silent> <F9> <Plug>StopMarkdownPreview
 
 " input switch using im-select
-Plugin 'ybian/smartim'
-let g:smartim_default = 'com.apple.keylayout.ABC'
+" Plugin 'ybian/smartim'
+" let g:smartim_default = 'com.apple.keylayout.ABC'
 
 " 结束插件安装
 call vundle#end()

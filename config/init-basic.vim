@@ -53,7 +53,7 @@ set backspace=2
 set wildmenu
 
 " 基于缩进或语法进行代码折叠
-set foldmethod=indent
+set foldmethod=manual
 
 " 启动 vim 时关闭折叠代码
 set nofoldenable
@@ -68,7 +68,7 @@ set cindent
 set hidden
 
 " 关闭自动换行
-set nowrap
+set wrap
 
 " 自适应不同语言的智能缩进
 filetype plugin indent on
